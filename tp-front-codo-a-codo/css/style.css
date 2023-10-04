@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root{
     --color-primario:rgb(67, 67, 75) ;
-    --color-secundario: ;
+    --color-secundario:rgb(39, 78, 106) ;
     --color-blanco:white ;
     --color-negro: ; 
 }
@@ -33,16 +33,26 @@ ul, ol{
 .header-cabeza{
     background-color:var(--color-primario);
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     height: 90px;
 }
+/* 
+@media screen and (min-width: 1024px) {
+    .header-cabeza{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+} */
 
-.logo img{
+.logo-img{
      
     width: 30%;
 }
 
+
+/* menu nav */
 .nav li{
     display: inline-block;
     padding: 0 7px;
@@ -56,8 +66,11 @@ ul, ol{
     color:var(--color-blanco);
 }
 
+#unico-dos{
+    color: rgb(12, 166, 12);
+}
 
-.logo{
+.div-logo{
     
     display: flex;
     justify-content: center;
@@ -70,9 +83,25 @@ ul, ol{
     font-size: 1.3rem;
 }
 
-#unico-dos{
-    color: rgb(12, 166, 12);
+
+/* --------------------------------------------------------------------- */
+/* icono nav para media queri */
+/* .icono-nav{
+    cursor: pointer;
+    position: absolute;
+    margin: 1rem;
+
+    background-color: black;
 }
+#icono{
+    
+}
+@media screen and (min-width: 1024px) {
+    .icono-nav{
+       display: none;
+    } 
+} */
+/* --------------------------------------------------------------------- */
 
 /* main section banner */
 
@@ -226,26 +255,32 @@ flex-direction: column;
 /* titulo del formulario */
 .label-formm{
     text-align: center;
-
 }
+
+span{
+    text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
 /* div del nombre y apellido */
 .nom-ape-formm{
     padding-top: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 35px;
-    
+    padding: 0px 265px;
+    width: 100%;
+    gap: 30px;
 }
 /* id nombre y apellido   */
  #nombre-user{
    display: flex;
    justify-content: center;
-    width: 348px;
+    width: 100%;
+    
 } 
 
 #apellido-user{
-    width: 348px; 
+    width: 100%;
 }
 
 /* textera y label */
@@ -255,11 +290,15 @@ flex-direction: column;
     flex-direction: column;
     width: 100%;
     height: 150px;
-    padding: 15px 394px;
+    padding: 15px 265px;
    margin: 4px 0;
 }
 
 /* bonton enviar de formulario */
+.botn-formm{
+    padding: 0px 265px;  
+}
+
 .btn-enviar{
     padding-bottom: 5px;
     margin-bottom:17px ;
@@ -275,7 +314,7 @@ color: var(--color-blanco);
 /* footer casi terminamos */
 
 .div-footer{
-    background-color: rgb(39, 78, 106); 
+    background-color: var(--color-secundario); 
     padding:2px ;
 }
 

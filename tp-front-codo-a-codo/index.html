@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://kit.fontawesome.com/0052f64a95.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Codo a Codo Jujuy</title>
 </head>
 <body>
-   <header class="header-cabeza">
-    <div class="logo">
-        <img src="./imagenes/codoacodo.png" alt="logo" >
+  
+   <header >
+    <div class="header-cabeza">
+    <div class="div-logo">
+        <img src="./imagenes/codoacodo.png" alt="logo" class="logo-img" >
         <p class="titulo-p" >Conf Bs As</p>
     </div>
-    <div class="div-titulo">
-       
-    </div>
-    <nav class="nav">
-        <ul class="ul-nav">
-            <li><a id="unico-li" href="">La conferencia</a></li>
-            <li><a href="">Los oradores</a></li>
-            <li><a href="">El lugar y la fecha</a></li>
-            <li><a href="">Conviértiti en orador</a></li>
-            <li><a id="unico-dos" href="">Compra ticket</a></li>
-        </ul>
-    </nav>
     
+    <nav class="navv">
+      <!-- <div class="icono-navv">
+        <i id="icono" class="fa-solid fa-bars" style="color: #d8d9d9;font-size:30px;"></i>
+       <img id="icono" src="../tp-front-codo-a-codo/imagenes/baseline-density-medium.png" alt="icono"> 
+      </div> -->
+      <div class="div-ul">
+        <ul class="ul-navv">
+            <li><a class="navv-li" id="unico-li" href="">La conferencia</a></li>
+            <li><a class="navv-li" href="">Los oradores</a></li>
+            <li><a class="navv-li" href="">El lugar y la fecha</a></li>
+            <li><a class="navv-li" href="">Conviértiti en orador</a></li>
+            <li><a class="navv-li" id="unico-dos" href="">Compra ticket</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
    </header> 
    <main>
 
@@ -142,7 +148,7 @@ y el condado de Honolulu han formado una ciudad-condado consolidada que cubre to
           <textarea name="comentario" id="coment-user" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
           <label for="">Recuerda incluir un título para tu charla</label>
         </div>
-          <div class="d-grid gap-2 col-6 mx-auto">
+          <div class="d-grid gap-2 botn-formm">
            <input class="btn btn-enviar" type="submit" value="Enviar">
           </div>
         </div>
