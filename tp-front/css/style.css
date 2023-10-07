@@ -228,6 +228,20 @@ padding-right: 5.5rem;
     border: 1px solid rgb(49, 176, 60);
 } 
 
+.btn-orador:hover{
+    background-color: rgb(37, 36, 36); 
+    color: rgb(219, 218, 218); 
+    /* border: 1px solid #737375; */
+   
+}
+
+.btn-ticket:hover{
+    background-color: rgb(43, 165, 53); 
+    color: rgb(219, 218, 218); 
+     border: 1px solid #d7d7da; 
+   
+}
+
 /* cards */
 
 .selet-card{
