@@ -9,6 +9,7 @@
     <title>Codo a Codo Jujuy</title>
 </head>
 <body>
+
    <header class="header-cabeza">
     <div class="logo">
         <img src="./imagenes/codoacodo.png" alt="logo" class="logo-img" >
@@ -32,7 +33,8 @@
    </header> 
    <main>
 
-    <section class="banner">
+    <section class="seccion-banner" >
+      <div class="banner">
         <div class="div-banner">
         <h1 class="banner-titulo">Conf Bs As</h1>
         <p class="banner-text">Bs As llega por primera vez a Argentina. Un evento para compartir con
@@ -45,7 +47,7 @@
         <input class="botn btn-ticket" type="button" value="Comprar ticket">
 
         </div>
-        
+      </div> 
     </section>
 
     <section class="sect-card">
@@ -92,40 +94,48 @@
     </section>
 
     <section class="card-horizontal">
-<div class="card-body-horizontal">
-    <div class="img-crd-horizont">
-<img src="../tp-front-codo-a-codo/imagenes/honolulu.jpg" alt="img de honolulu">
-    </div>
-    <div class="text-crd-horizont">
-<h2>Bs As - Octubre</h2>
-<p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas
-    sureña de entre las principales  ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
-urbana en la costa sureste de la isla de Oahu, la ciudades
-y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600 km° de superficie). </p>
-<button type="button" class="btn btn-outline-light">Conocé más</button>
-</div>
-    
-</div>
+        <!-- <div class="card-body-horizontal">
+            <div class="img-crd-horizont">
+              
+                <img class="honolulu" src="../tp-front-codo-a-codo/imagenes/honolulu.jpg" alt="img de honolulu">
+              
+            </div>
+            <div class="text-crd-horizont">
+              
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas
+                    sureña de entre las principales  ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
+                urbana en la costa sureste de la isla de Oahu, la ciudades
+                y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600 km° de superficie). </p>
+                <button type="button" class="btn btn-outline-light">Conocé más</button>
+              
+            </div>   
+        </div> -->
 
 
-        <!-- <div class="card mb-5" style="max-width: 540px;">
+        <div class="card mb-3 mt-4" style="max-width: 100%;">
             <div class="row g-0">
               <div class="col-md-6">
                 <img src="../tp-front-codo-a-codo/imagenes/honolulu.jpg" class="img-fluid" alt="onolulu">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 texto-horizontal">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Bs As - Octubre</h5>
+                  <p class="card-text ">Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas
+                    sureña de entre las principales  ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
+                urbana en la costa sureste de la isla de Oahu, la ciudades
+                y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600 km° de superficie).</p>
+                <button  type="button" class="btn btn-outline-light boton-horizontal">Conocé más</button>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div> 
 
     </section>
 
     <section class="formulario">
+
+      
 
       <div class="div-form">
         <div class="text-form">
@@ -136,10 +146,19 @@ y el condado de Honolulu han formado una ciudad-condado consolidada que cubre to
         <form action="#" method="get">
         <div class="formm">
           <label class="label-formm" for="">Anotate como orador para dar una <span>charla ignite</span>. Cúentanos de qué quieres hablar!</label>
-          <div class="nom-ape-formm">
-          <input type="text" name="nombre" id="nombre-user" placeholder="Nombre">
-          <input type="text" name="apellido" id="apellido-user" placeholder="Apellido">
-        </div>
+          <!-- <div class="nom-ape-formm">
+            <input type="text" name="nombre" id="nombre-user" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellido-user" placeholder="Apellido">
+          </div> -->
+          <div class="aaaa">
+          <div class="row fila-formm">
+            <div class="col ">
+              <input type="text" class="form-control " placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control " placeholder="Apellido" aria-label="Last name">
+            </div>
+          </div>
         <div class="textera-formm">
           <textarea name="comentario" id="coment-user" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
           <label for="">Recuerda incluir un título para tu charla</label>
@@ -148,6 +167,8 @@ y el condado de Honolulu han formado una ciudad-condado consolidada que cubre to
            <input class="btn btn-enviar" type="submit" value="Enviar">
           </div>
         </div>
+        </div>
+
           </form>
          
         </div>

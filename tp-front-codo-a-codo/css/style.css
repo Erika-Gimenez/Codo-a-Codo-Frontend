@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root{
     --color-primario:rgb(67, 67, 75) ;
     --color-secundario:rgb(39, 78, 106) ;
     --color-blanco:white ;
-    --color-negro: ; 
+   
 }
 
 *{
@@ -14,6 +15,7 @@
 
 html{
     font-family: 'Open Sans';
+   
 }
 
 body{
@@ -42,23 +44,24 @@ p{
     align-items: center; 
     height: 90px;
 }
-/* 
-@media screen and (min-width: 1024px) {
-    .header-cabeza{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-} */
 
-.logo-img{
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
      
     width: 30%;
 }
 
+
+
 .div-nav{
     display: flex;
-   
+  
     align-items: center; 
     width: 100%;
 }
@@ -67,9 +70,18 @@ p{
     color: rgb(142, 143, 143); 
     font-size: 1rem;
 }
+
+.a-nav:hover{
+    background-color: rgb(66, 65, 65); 
+    color: rgb(219, 218, 218); 
+    border: 1px solid #737375;
+    border-radius: 15px;
+}
+
 .ul-nav {
    display: flex;
     align-items: baseline;
+    width: 100%;
 } 
 
 #unico-li{
@@ -101,12 +113,14 @@ p{
     .header-cabeza{
         
         display: flex;
-        
+        flex-wrap: wrap;
+        width: 100%;
       
     }
     .logo{
      display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    
    
     }
 
@@ -114,18 +128,21 @@ p{
         display: flex;
         width: 10%;     
     }
+
+    .nav{
+        width: 100%;
+    }
     .div-nav{
-        background-color: var(--color-primario);
-       
+         background-color: var(--color-primario);
          display: flex; 
-      
          width: 100%; 
     }
 
     .ul-nav{
          display: flex; 
-        flex-direction: column;
-        
+         justify-content: center;
+         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .a-nav{
@@ -133,18 +150,33 @@ p{
         display: flex;
         font-size: 1rem;
     }
+
+
 }
 
 /* main section banner */
 
+
 .banner{
-    background: url(../imagenes/ba1.jpg);
-    height: 40.10rem;
-    background-size:cover ;
+    
+    background: linear-gradient(rgba(5, 7, 12, 0.473), rgba(5, 7, 12, 0.473)),
+    url(../imagenes/ba1.jpg) bottom;
+   
+    width: 100%;
+    height: 90vh;
+    /* ancho y alto */
+    background-size:100vw 110vh;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   
+    
+    /* height: 40.10rem;
+    background-size:cover ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    
 }
  
 .div-banner{
@@ -153,13 +185,23 @@ p{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    width: 52%;
     flex-wrap: wrap;
 text-align: right;
 padding-right: 5.5rem;
 }
 
+@media screen and (max-width:768px){
+    .div-banner{
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
+
 .banner-text{
+   width:100% ;
     line-height: 1.5;
     font-size: .99rem;
     padding: 10px 0px 17px;
@@ -226,36 +268,16 @@ padding-right: 5.5rem;
 }
 
 /* card horizontal */
-
-.card-body-horizontal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:2rem 0em 2rem ; 
+.texto-horizontal{
+    background-color:var(--color-primario) ;
+    color: var(--color-blanco);
+    font-size: .9rem;
     
 }
 
- .img-crd-horizont img{
-    width:751px;
-    margin: 0;
-    padding: 0;
-   
-    height:450px;
-    background-size: cover;
-    border-right: 2px solid white;
+.boton-horizontal{
+    margin-top: 1rem;
 }
-
-.text-crd-horizont{
-    width: 765px;
-    background-color:var(--color-primario) ;
-    color: var(--color-blanco);
-    text-align:start;
-    height:450px;
-    font-size: .9rem;
-    padding-left:1rem ;
-    padding-top:1rem ;
-}
-
 /* formulario */
 
 .div-form{
@@ -294,41 +316,37 @@ span{
   text-decoration-style: dotted;
 }
 
-/* div del nombre y apellido */
-.nom-ape-formm{
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    padding: 0px 265px;
-    width: 100%;
-    gap: 30px;
+.aaaa{
+    margin: 0rem 23rem ;
+   
 }
-/* id nombre y apellido   */
- #nombre-user{
-   display: flex;
-   justify-content: center;
-    width: 100%;
-    
-} 
 
-#apellido-user{
-    width: 100%;
+/* div del nombre y apellido */
+.fila-formm{
+    margin-right: 0;
+    margin-left: 0;
 }
+
 
 /* textera y label */
 .textera-formm{
     display: flex;
     
     flex-direction: column;
-    width: 100%;
     height: 150px;
-    padding: 15px 265px;
-   margin: 4px 0;
+    /* padding: 15px 265px;---- error creo */
+   margin: 20px 10px 20px 10px;
+   
+}
+
+#coment-user{
+    border-color:#dee2e6 ;
+    font-size: 18px;
 }
 
 /* bonton enviar de formulario */
 .botn-formm{
-    padding: 0px 265px;  
+    margin: 0px 10px;
 }
 
 .btn-enviar{
@@ -343,19 +361,32 @@ background-color: rgb(100, 151, 48);
 color: var(--color-blanco);
 }
 
+@media screen and (max-width:1024px) {
+
+    .aaaa{
+        margin: 0 ; 
+        
+       
+    }
+
+    
+}
+
+
 /* footer casi terminamos */
 
 .div-footer{
     background-color: var(--color-secundario); 
     padding:2px ;
+    width: 100%;
 }
 
 .ul-footer{
     /* background-color: rgb(43, 100, 140); */
-    display: flex;
+      display: flex; 
     justify-content: space-evenly;
     align-items: center;
-    
+   
 }
 
 .ul-footer a{
@@ -370,40 +401,16 @@ color: var(--color-blanco);
     display: flex;
     
 }
-/* .div-footer{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
-}  */
-/* 
-.div-footer li{
-      background-color: rgb(34, 88, 93); 
-    display: inline-block; 
-    
-    margin-right: 4rem;
-    width: 6rem; 
-    text-align: center;
-   
-   
-} */
 
-/* .ul-footer{
-    background-color: rgb(165, 183, 183);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 6rem;
-    text-align: center;
-}
+@media screen and (max-width:768px) {
 
-.ul-footer li {
    
-    margin: 0;
-    padding: 0;
+.ul-footer{
+    display: flex;
+    justify-content: center; 
+   flex-direction: column;
+    width: 100%;
 }
-.ul-footer a{
-    color: var(--color-blanco);
-    text-align: center;
     
-} */
+} 
+
