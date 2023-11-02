@@ -375,6 +375,15 @@ background-color: rgb(100, 151, 48);
 color: var(--color-blanco);
 }
 
+.section-pag2{
+    border: 1px solid red;
+background-color:rebeccapurple ;
+}
+
+.div-pag2{
+    border: 1px solid rgb(37, 5, 249); 
+}
+
 @media screen and (max-width:1024px) {
 
     .aaaa{
