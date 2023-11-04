@@ -21,6 +21,9 @@ html{
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a{
@@ -37,6 +40,9 @@ ul, ol{
 p{
     margin-bottom: 0;
 }
+
+
+
 .header-cabeza{
     background-color:var(--color-primario);
     display: flex;
@@ -100,7 +106,7 @@ p{
     gap: 4px;
 }
 
-.titulo-p{
+.titulo-p a{
     display: flex;
     align-items: center;
     color: var(--color-blanco);
@@ -280,6 +286,10 @@ span{
   text-decoration-style: dotted;
 }
 
+#total{
+    text-decoration-line: none;
+}
+
 .form-margin{
     margin: 0rem 23rem ;
    
@@ -412,6 +422,7 @@ text-align: center;
     background-color: var(--color-secundario); 
     padding:2px ;
     width: 100%;
+    margin-top: auto;
 }
 
 .ul-footer{
