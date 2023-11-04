@@ -109,50 +109,7 @@ p{
 
 
 
-@media screen and (max-width:768px) {
-    .header-cabeza{
-        
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-      
-    }
-    .logo{
-     display: flex;
-    justify-content: center;
-    
-   
-    }
 
-    .logo-img{
-        display: flex;
-        width: 10%;     
-    }
-
-    .nav{
-        width: 100%;
-    }
-    .div-nav{
-         background-color: var(--color-primario);
-         display: flex; 
-         width: 100%; 
-    }
-
-    .ul-nav{
-         display: flex; 
-         justify-content: center;
-         flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .a-nav{
-        /* padding-bottom: 12px; */
-        display: flex;
-        font-size: 1rem;
-    }
-
-
-}
 
 /* main section banner */
 
@@ -191,14 +148,7 @@ text-align: right;
 padding-right: 5.5rem;
 }
 
-@media screen and (max-width:768px){
-    .div-banner{
-        width: 100%;
-        padding: 0;
-        text-align: left;
-        justify-content: flex-start;
-    }
-}
+
 
 .banner-text{
    width:100% ;
@@ -330,7 +280,7 @@ span{
   text-decoration-style: dotted;
 }
 
-.aaaa{
+.form-margin{
     margin: 0rem 23rem ;
    
 }
@@ -375,25 +325,85 @@ background-color: rgb(100, 151, 48);
 color: var(--color-blanco);
 }
 
+/* ------------------Pagina 2 comprar ticket------------------- */
+
 .section-pag2{
-    border: 1px solid red;
-background-color:rebeccapurple ;
-}
+  
+text-align: center;
+} 
 
 .div-pag2{
-    border: 1px solid rgb(37, 5, 249); 
+   
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding-top: 2rem;
 }
 
-@media screen and (max-width:1024px) {
-
-    .aaaa{
-        margin: 0 ; 
-        
-       
-    }
-
-    
+.div-estudiante-pag2{
+    border: 2px solid rgb(42, 5, 249);
+    text-align: center;
+    padding: 1.4rem;
 }
+
+.div-trainee-pag2{
+    border: 2px solid rgb(7, 202, 220);
+    text-align: center;
+    padding: 1.4rem;
+}
+
+.div-junior-pag2{
+    border: 2px solid rgb(249, 212, 5);
+    text-align: center;
+    padding: 1.4rem;
+}
+
+.p-descuento{
+    font-size: 1.3rem;
+}
+
+.p-num-porcentaje{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 18px 18px;
+}
+
+/* formulario pagina */
+
+.form-margin-pag2{
+    margin: 0rem 24.4rem ;
+}
+
+/* total a pagar */
+
+.div-total{
+    padding: 2rem 0px 2rem;
+}
+
+.div-total-a-pagar{
+    border-radius: 5px;
+  padding: 10px;
+    border: 2px solid rgb(198, 219, 234);
+    background-color: rgba(205, 225, 249, 0.799);
+}
+
+.total{
+    font-size: 1.2rem;
+    padding-left: 13px;
+}
+
+/* botones */
+.div-botones-pag2{
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+    margin:0px 8px;
+}
+
+
+
 
 
 /* footer casi terminamos */
@@ -425,8 +435,81 @@ color: var(--color-blanco);
     
 }
 
+@media screen and (max-width:1024px) {
+
+    .div-pag2{
+        margin-top: 2rem;
+    }
+    .form-margin{
+        margin: 0 ; 
+        
+       
+    }
+
+    .form-margin-pag2{
+        margin: 0 ;
+    }
+
+    .fila-form-pag2{
+        margin: 0 ; 
+    }
+
+    .correo-pag2{
+        margin:0px 9px ;
+    }
+}
+
+
 @media screen and (max-width:768px) {
 
+    .header-cabeza{
+        
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      
+    }
+    .logo{
+     display: flex;
+    justify-content: center;
+    
+   
+    }
+
+    .logo-img{
+        display: flex;
+        width: 10%;     
+    }
+
+    .nav{
+        width: 100%;
+    }
+    .div-nav{
+         background-color: var(--color-primario);
+         display: flex; 
+         width: 100%; 
+    }
+
+    .ul-nav{
+         display: flex; 
+         justify-content: center;
+         flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .a-nav{
+        /* padding-bottom: 12px; */
+        display: flex;
+        font-size: 1rem;
+    }
+
+
+    .div-banner{
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        justify-content: flex-start;
+    }
    
 .ul-footer{
     display: flex;
@@ -436,4 +519,9 @@ color: var(--color-blanco);
 }
     
 } 
+
+
+@media screen and (max-width:430px){
+
+}
 
