@@ -43,6 +43,7 @@ p{
 
 
 
+
 .header-cabeza{
     background-color:var(--color-primario);
     display: flex;
@@ -417,12 +418,14 @@ text-align: center;
 
 
 /* footer casi terminamos */
-
+.footer-pie{
+    margin-top: auto;
+}
 .div-footer{
     background-color: var(--color-secundario); 
     padding:2px ;
     width: 100%;
-    margin-top: auto;
+   
 }
 
 .ul-footer{
@@ -444,6 +447,12 @@ color: var(--color-blanco);
     width: 6rem;
     display: flex;
     
+}
+
+@media screen and (max-width:2570px) {
+    .contenedor{
+        margin-top: auto;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -532,7 +541,4 @@ color: var(--color-blanco);
 } 
 
 
-@media screen and (max-width:430px){
-
-}
 
